@@ -24,14 +24,17 @@ require_once __DIR__ . '/Data/db.php';
     </tr>
   </thead>
   <tbody>
+  <?php foreach($movies_array as $movie){ ?>
     <tr>
-      <th scope="row"><?php echo $indiana_jones->getTitle()?></th>
-      <td><?php echo $indiana_jones->getGenre()[0]?> <?php echo $indiana_jones->getGenre()[1]?></td>
-      <td><?php echo $indiana_jones->getMovieDirector()?></td>
-      <td><?php echo $indiana_jones->getYear()?></td>
-      <td><?php echo $indiana_jones->getTotalCashed()?></td>
+      <th scope="row"><?php echo $movie->getTitle()?></th>
+      <td><?php echo $movie->getGenre()[0]?> <?php echo $movie->getGenre()[1]?> <?php echo $movie->getGenre()[2]?></td>
+      <td><?php echo $movie->getMovieDirector()?></td>
+      <td><?php echo $movie->getYear()?></td>
+      <td><?php echo $movie->getTotalCashed()?></td>
     </tr>
-    <tr>
+    <?php } ?>
+
+    <!-- <tr>
       <th scope="row"><?php echo $predator2->getTitle()?></th>
       <td><?php echo $predator2->getGenre()[0]?> <?php echo $predator2->getGenre()[1]?></td>
       <td><?php echo $predator2->getMovieDirector()?></td>
@@ -75,7 +78,7 @@ require_once __DIR__ . '/Data/db.php';
     </tr>
     <tr>
     <th scope="row"><?php echo $lord_rings->getTitle()?></th>
-      <td><?php echo $lord_rings->getGenre()[0]?> <?php echo $lord_rings->getGenre()[1]?></td>
+      <td><?php echo $lord_rings->getGenre()[0]?> <?php echo $lord_rings->getGenre()[1]?> <?php echo $lord_rings->getGenre()[2]?></td>
       <td><?php echo $lord_rings->getMovieDirector()?></td>
       <td><?php echo $lord_rings->getYear()?></td>
       <td><?php echo $lord_rings->getTotalCashed()?></td>
@@ -93,7 +96,7 @@ require_once __DIR__ . '/Data/db.php';
       <td><?php echo $allenatore->getMovieDirector()?></td>
       <td><?php echo $allenatore->getYear()?></td>
       <td><?php echo $allenatore->getTotalCashed()?></td>
-    </tr>
+    </tr> -->
   </tbody>
 </table>
 </body>

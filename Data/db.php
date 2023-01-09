@@ -21,7 +21,7 @@ $beowulf->setTotalCashed(350000);
 $titanic = new Movie('Titanic', ['Storico','Drammatico'], 'James Cameron', '1998');
 $titanic->setTotalCashed(9850000);
 
-$lord_rings = new Movie('Il Signore degli Anelli', ['Avventura','Azione', 'Epico'], 'Peter Jackson', '2001');
+$lord_rings = new Movie('Il Signore degli Anelli', ['Avventura','Azione','Epico'], 'Peter Jackson', '2001');
 $lord_rings->setTotalCashed(7850000);
 
 $pierino = new Movie('Pierino Contro Tutti', ['Comico','Demenziale'], 'Marino Girolami', '1981');
@@ -29,3 +29,5 @@ $pierino->setTotalCashed(150000);
 
 $allenatore = new Movie('L\'Allenatore nel Pallone', ['Comico','Demenziale'], 'Sergio Martino', '1984');
 $allenatore->setTotalCashed(350000);
+
+$movies_array = [$indiana_jones, $predator2, $starship_troopers, $fantozzi, $treehundred, $beowulf, $titanic, $lord_rings, $pierino, $allenatore];
